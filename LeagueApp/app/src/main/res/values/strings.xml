@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LeagueApp</string>
+    <string name="button_text">Search</string>
 </resources>
