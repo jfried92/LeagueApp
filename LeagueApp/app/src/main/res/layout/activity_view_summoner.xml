@@ -9,25 +9,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="jonathanfried.leagueapp.ViewSummonerActivity">
 
-    <ImageView android:id="@+id/iconView"
+    <RelativeLayout android:id="@+id/summonerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/iconView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
         android:contentDescription="Summoner Icon"/>
 
-    <TextView android:id="@+id/nameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/iconView"
-        android:layout_toRightOf="@id/iconView"
-        android:textSize="20sp"/>
+        <TextView android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconView"
+            android:layout_toRightOf="@id/iconView"
+            android:textSize="20sp"/>
 
-    <TextView android:id="@+id/levelView"
+        <TextView android:id="@+id/levelView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconView"
+            android:layout_toEndOf="@id/iconView"
+            android:layout_below="@id/nameView"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/recentGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/iconView"
-        android:layout_toEndOf="@id/iconView"
-        android:layout_below="@id/nameView"
-        android:textSize="20sp"/>
+        android:layout_below="@id/summonerInfo">
+
+        <ProgressBar android:id="@+id/retrievalProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView android:id="@+id/gameInfoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
