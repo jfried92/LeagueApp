@@ -36,10 +36,20 @@
             android:textSize="20sp"/>
     </RelativeLayout>
 
+    <RelativeLayout android:id="@+id/rankInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summonerInfo"
+        android:layout_above="@id/recentGame">
+
+
+
+    </RelativeLayout>
+
     <RelativeLayout android:id="@+id/recentGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/summonerInfo">
+        android:layout_below="@id/rankInfo">
 
         <ProgressBar android:id="@+id/retrievalProgress"
             android:layout_width="wrap_content"
