@@ -42,6 +42,9 @@
         android:layout_below="@id/summonerInfo"
         android:layout_above="@id/recentGame">
 
+        <ImageView android:id="@+id/rankIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
 
 
     </RelativeLayout>
